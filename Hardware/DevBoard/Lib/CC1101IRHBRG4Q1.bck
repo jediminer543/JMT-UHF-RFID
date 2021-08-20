@@ -1,0 +1,16 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CC1101
+D Shorthand
+F http://www.ti.com/lit/ds/symlink/cc1101.pdf
+$ENDCMP
+#
+$CMP CC1101IRHBRG4Q1
+F http://www.ti.com/lit/ds/symlink/cc1101.pdf
+$ENDCMP
+#
+$CMP CC1101RGP
+F http://www.ti.com/lit/ds/symlink/cc1101.pdf
+$ENDCMP
+#
+#End Doc Library

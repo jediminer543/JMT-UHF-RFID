@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name CC1101)(type Legacy)(uri ${KIPRJMOD}/Lib/CC1101IRHBRG4Q1.lib)(options "")(descr ""))
+  (lib (name CC1190)(type Legacy)(uri ${KIPRJMOD}/Lib/CC1190RGVR.lib)(options "")(descr ""))
+  (lib (name EPCTest2-rescue)(type Legacy)(uri ${KIPRJMOD}/EPCTest2-rescue.lib)(options "")(descr ""))
+  (lib (name New_Library)(type Legacy)(uri C:/Users/benob/OneDrive/Code/Kicad/New_Library.lib)(options "")(descr ""))
+  (lib (name tmp)(type Legacy)(uri C:/Users/benob/OneDrive/Code/Kicad/tmp.lib)(options "")(descr ""))
+)

@@ -1,0 +1,402 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 650  3250 900  2350
+U 5E117038
+F0 "RFRight" 50
+F1 "CC1101-RF.sch" 50
+F2 "RF_SE" O R 1550 4000 50 
+F3 "RF_N" O R 1550 3650 50 
+F4 "RF_P" O R 1550 3750 50 
+F5 "SCLK" I R 1550 4500 50 
+F6 "MISO" O R 1550 4600 50 
+F7 "MOSI" I R 1550 4700 50 
+F8 "VCC" B R 1550 3300 50 
+F9 "GND" B R 1550 3400 50 
+F10 "CSn" I R 1550 4800 50 
+F11 "GDO0" B R 1550 5050 50 
+F12 "GDO2" B R 1550 5150 50 
+$EndSheet
+$Sheet
+S 650  700  900  2350
+U 5DFC5AD9
+F0 "RFLeft" 50
+F1 "CC1101-RF.sch" 50
+F2 "RF_SE" O R 1550 1450 50 
+F3 "RF_N" O R 1550 1100 50 
+F4 "RF_P" O R 1550 1200 50 
+F5 "SCLK" I R 1550 1950 50 
+F6 "MISO" O R 1550 2050 50 
+F7 "MOSI" I R 1550 2150 50 
+F8 "VCC" B R 1550 750 50 
+F9 "GND" B R 1550 850 50 
+F10 "CSn" I R 1550 2250 50 
+F11 "GDO0" B R 1550 2500 50 
+F12 "GDO2" B R 1550 2600 50 
+$EndSheet
+$Comp
+L Device:R R3
+U 1 1 5DFF839E
+P 3700 2650
+F 0 "R3" H 3630 2604 50  0000 R CNN
+F 1 "PILeg" H 3630 2695 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" V 3630 2650 50  0001 C CNN
+F 3 "~" H 3700 2650 50  0001 C CNN
+F 4 "DNP" H 3700 2650 50  0001 C CNN "LCSC"
+F 5 "0.005" H 3700 2650 50  0001 C CNN "Price"
+	1    3700 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DFF8A39
+P 3100 2650
+F 0 "R2" H 3030 2604 50  0000 R CNN
+F 1 "PILeg" H 3030 2695 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" V 3030 2650 50  0001 C CNN
+F 3 "~" H 3100 2650 50  0001 C CNN
+F 4 "DNP" H 3100 2650 50  0001 C CNN "LCSC"
+F 5 "0.005" H 3100 2650 50  0001 C CNN "Price"
+	1    3100 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DFF8E67
+P 3400 2400
+F 0 "R1" V 3607 2400 50  0000 C CNN
+F 1 "PICross" V 3516 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3330 2400 50  0001 C CNN
+F 3 "~" H 3400 2400 50  0001 C CNN
+F 4 "DNP" H 3400 2400 50  0001 C CNN "LCSC"
+F 5 "0.005" H 3400 2400 50  0001 C CNN "Price"
+	1    3400 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 5E004BB2
+P 1950 1450
+F 0 "JP1" H 1950 1714 50  0000 C CNN
+F 1 "ISO_RX" H 1950 1623 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 1950 1450 50  0001 C CNN
+F 3 "~" H 1950 1450 50  0001 C CNN
+F 4 "DNP" H 1950 1450 50  0001 C CNN "LCSC"
+F 5 "0.002705" H 1950 1450 50  0001 C CNN "Price"
+	1    1950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 5E007DEF
+P 3200 1100
+F 0 "J1" H 3280 1142 50  0000 L CNN
+F 1 "CommonSPI" H 3280 1051 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 3200 1100 50  0001 C CNN
+F 3 "~" H 3200 1100 50  0001 C CNN
+F 4 "DNP" H 3200 1100 50  0001 C CNN "LCSC"
+F 5 "0" H 3200 1100 50  0001 C CNN "Price"
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+Text Label 1850 1950 2    50   ~ 0
+SCLK
+Text Label 1850 2150 2    50   ~ 0
+MOSI
+Text Label 1850 2050 2    50   ~ 0
+MISO
+Text Label 1850 2250 2    50   ~ 0
+CSnRX
+Text Label 1850 750  2    50   ~ 0
+VCC
+Text Label 1850 850  2    50   ~ 0
+GND
+Wire Wire Line
+	1850 850  1550 850 
+Wire Wire Line
+	1850 750  1550 750 
+Wire Wire Line
+	1850 1950 1550 1950
+Wire Wire Line
+	1850 2050 1550 2050
+Wire Wire Line
+	1850 2150 1550 2150
+Wire Wire Line
+	1850 2250 1550 2250
+Text Label 1950 2500 2    50   ~ 0
+GDO0_RX
+Text Label 1950 2600 2    50   ~ 0
+GDO2_RX
+Wire Wire Line
+	1950 2500 1550 2500
+Wire Wire Line
+	1950 2600 1550 2600
+Wire Wire Line
+	1650 1450 1550 1450
+Text Label 2550 1450 2    50   ~ 0
+RF_RX
+Wire Wire Line
+	2550 1450 2250 1450
+NoConn ~ 1550 1100
+NoConn ~ 1550 1200
+$Comp
+L Device:Jumper JP2
+U 1 1 5E00BD0D
+P 1950 4000
+F 0 "JP2" H 1950 4264 50  0000 C CNN
+F 1 "ISO_TX" H 1950 4173 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 1950 4000 50  0001 C CNN
+F 3 "~" H 1950 4000 50  0001 C CNN
+F 4 "DNP" H 1950 4000 50  0001 C CNN "LCSC"
+F 5 "0.002705" H 1950 4000 50  0001 C CNN "Price"
+	1    1950 4000
+	1    0    0    -1  
+$EndComp
+Text Label 1850 4500 2    50   ~ 0
+SCLK
+Text Label 1850 4700 2    50   ~ 0
+MOSI
+Text Label 1850 4600 2    50   ~ 0
+MISO
+Text Label 1850 4800 2    50   ~ 0
+CSnTX
+Text Label 1850 3300 2    50   ~ 0
+VCC
+Text Label 1850 3400 2    50   ~ 0
+GND
+Wire Wire Line
+	1850 3400 1550 3400
+Wire Wire Line
+	1850 3300 1550 3300
+Wire Wire Line
+	1850 4500 1550 4500
+Wire Wire Line
+	1850 4600 1550 4600
+Wire Wire Line
+	1850 4700 1550 4700
+Wire Wire Line
+	1850 4800 1550 4800
+Text Label 1950 5050 2    50   ~ 0
+GDO0_TX
+Text Label 1950 5150 2    50   ~ 0
+GDO2_TX
+Wire Wire Line
+	1950 5050 1550 5050
+Wire Wire Line
+	1950 5150 1550 5150
+Text Label 2550 4000 2    50   ~ 0
+RF_TX
+Wire Wire Line
+	2550 4000 2250 4000
+Wire Wire Line
+	1650 4000 1550 4000
+NoConn ~ 1550 3750
+NoConn ~ 1550 3650
+Text Label 2700 800  0    50   ~ 0
+VCC
+Text Label 2700 900  0    50   ~ 0
+GND
+Text Label 2700 1000 0    50   ~ 0
+MISO
+Text Label 2700 1100 0    50   ~ 0
+MOSI
+Text Label 2700 1200 0    50   ~ 0
+SCLK
+Text Label 2700 1300 0    50   ~ 0
+CSnRX
+Text Label 2700 1400 0    50   ~ 0
+CSnTX
+Wire Wire Line
+	2700 1400 3000 1400
+Wire Wire Line
+	3000 1300 2700 1300
+Wire Wire Line
+	2700 1200 3000 1200
+Wire Wire Line
+	3000 1100 2700 1100
+Wire Wire Line
+	2700 1000 3000 1000
+Wire Wire Line
+	3000 900  2700 900 
+Wire Wire Line
+	2700 800  3000 800 
+Wire Notes Line
+	550  3150 2600 3150
+Wire Notes Line
+	550  5700 2600 5700
+Wire Notes Line
+	550  600  550  5700
+Wire Notes Line
+	2600 600  2600 5700
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E01D887
+P 3300 1800
+F 0 "J2" H 3380 1792 50  0000 L CNN
+F 1 "GDO" H 3380 1701 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3300 1800 50  0001 C CNN
+F 3 "~" H 3300 1800 50  0001 C CNN
+F 4 "DNP" H 3300 1800 50  0001 C CNN "LCSC"
+F 5 "0" H 3300 1800 50  0001 C CNN "Price"
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Text Label 2700 1700 0    50   ~ 0
+GDO0_RX
+Text Label 2700 1800 0    50   ~ 0
+GDO2_RX
+Text Label 2700 1900 0    50   ~ 0
+GDO0_TX
+Text Label 2700 2000 0    50   ~ 0
+GDO2_TX
+Wire Wire Line
+	2700 2000 3100 2000
+Wire Wire Line
+	3100 1900 2700 1900
+Wire Wire Line
+	2700 1800 3100 1800
+Wire Wire Line
+	3100 1700 2700 1700
+Wire Notes Line
+	4000 600  4000 2100
+Wire Notes Line
+	550  600  4000 600 
+Text Label 2650 2400 0    50   ~ 0
+RF_RX
+Text Label 4050 2400 2    50   ~ 0
+RF_RX_ATT
+Wire Wire Line
+	3550 2400 3700 2400
+Wire Wire Line
+	3700 2500 3700 2400
+Connection ~ 3700 2400
+Wire Wire Line
+	3700 2400 4050 2400
+Wire Wire Line
+	3250 2400 3100 2400
+Wire Wire Line
+	3100 2500 3100 2400
+Connection ~ 3100 2400
+Wire Wire Line
+	3100 2400 2650 2400
+Text Label 3100 3000 1    50   ~ 0
+GND
+Wire Wire Line
+	3100 3000 3100 2800
+Text Label 3700 3000 1    50   ~ 0
+GND
+Wire Wire Line
+	3700 3000 3700 2800
+Text Notes 2650 2250 0    50   ~ 0
+PIAtt
+Wire Notes Line
+	4150 2100 4150 3050
+Wire Notes Line
+	2600 2100 4150 2100
+Wire Notes Line
+	4200 4000 2600 4000
+Wire Notes Line
+	2600 3050 4200 3050
+Text Label 2650 3200 0    50   ~ 0
+RF_RX_ATT
+Text Label 2650 3400 0    50   ~ 0
+RF_TX
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 5E03775B
+P 3600 3200
+F 0 "J3" H 3700 3175 50  0000 L CNN
+F 1 "CombOut" H 3700 3084 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 3600 3200 50  0001 C CNN
+F 3 " ~" H 3600 3200 50  0001 C CNN
+F 4 "DNP" H 3600 3200 50  0001 C CNN "LCSC"
+F 5 "1.12" H 3600 3200 50  0001 C CNN "Price"
+	1    3600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3400 3050 3400
+Wire Wire Line
+	3050 3400 3050 3200
+Wire Wire Line
+	3050 3200 3400 3200
+Wire Wire Line
+	3050 3200 2650 3200
+Connection ~ 3050 3200
+Text Label 3200 3400 0    50   ~ 0
+GND
+Wire Wire Line
+	3200 3400 3600 3400
+Wire Notes Line
+	4200 4400 2600 4400
+Wire Notes Line
+	4200 3050 4200 4400
+Text Label 2700 4500 0    50   ~ 0
+GND
+Text Label 3000 4650 2    50   ~ 0
+VCC
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5E03BC2A
+P 3000 4650
+F 0 "#PWR0101" H 3000 4500 50  0001 C CNN
+F 1 "+3V3" H 3015 4823 50  0000 C CNN
+F 2 "" H 3000 4650 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E03D4E5
+P 2700 4500
+F 0 "#PWR0102" H 2700 4250 50  0001 C CNN
+F 1 "GND" H 2705 4327 50  0000 C CNN
+F 2 "" H 2700 4500 50  0001 C CNN
+F 3 "" H 2700 4500 50  0001 C CNN
+	1    2700 4500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3200 4400 3200 4750
+Wire Notes Line
+	3200 4750 2600 4750
+Text Label 2650 3750 0    50   ~ 0
+RF_TX
+$Comp
+L Connector:Conn_Coaxial J8
+U 1 1 5E940764
+P 3600 3550
+F 0 "J8" H 3700 3525 50  0000 L CNN
+F 1 "Amped In" H 3700 3434 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 3600 3550 50  0001 C CNN
+F 3 " ~" H 3600 3550 50  0001 C CNN
+F 4 "DNP" H 3600 3550 50  0001 C CNN "LCSC"
+F 5 "1.12" H 3600 3550 50  0001 C CNN "Price"
+	1    3600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3750 3050 3750
+Wire Wire Line
+	3050 3750 3050 3550
+Wire Wire Line
+	3050 3550 3400 3550
+Text Label 3200 3750 0    50   ~ 0
+GND
+Wire Wire Line
+	3200 3750 3600 3750
+$EndSCHEMATC

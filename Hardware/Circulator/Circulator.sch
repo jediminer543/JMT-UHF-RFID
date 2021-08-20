@@ -1,0 +1,107 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 60480BBE
+P 4000 2650
+F 0 "J3" H 4100 2625 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4100 2534 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 4000 2650 50  0001 C CNN
+F 3 " ~" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 60481144
+P 4550 1600
+F 0 "J2" H 4650 1575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4650 1484 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 4550 1600 50  0001 C CNN
+F 3 " ~" H 4550 1600 50  0001 C CNN
+	1    4550 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60487B57
+P 4800 1650
+F 0 "#PWR0101" H 4800 1400 50  0001 C CNN
+F 1 "GND" H 4805 1477 50  0000 C CNN
+F 2 "" H 4800 1650 50  0001 C CNN
+F 3 "" H 4800 1650 50  0001 C CNN
+	1    4800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 6048CA37
+P 3600 1600
+F 0 "J1" H 3700 1575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 3700 1484 50  0000 L CNN
+F 2 "Connectors:SMA_THT_Jack_Straight" H 3600 1600 50  0001 C CNN
+F 3 " ~" H 3600 1600 50  0001 C CNN
+	1    3600 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6048CA3D
+P 3850 1650
+F 0 "#PWR0102" H 3850 1400 50  0001 C CNN
+F 1 "GND" H 3855 1477 50  0000 C CNN
+F 2 "" H 3850 1650 50  0001 C CNN
+F 3 "" H 3850 1650 50  0001 C CNN
+	1    3850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1600 3850 1600
+Wire Wire Line
+	3850 1600 3850 1650
+Wire Wire Line
+	4750 1600 4800 1600
+Wire Wire Line
+	4800 1600 4800 1650
+Wire Wire Line
+	4550 1800 4550 2000
+Wire Wire Line
+	4550 2000 3600 2000
+Wire Wire Line
+	3600 2000 3600 1800
+$Comp
+L power:GND #PWR0103
+U 1 1 6048D3C3
+P 4000 2850
+F 0 "#PWR0103" H 4000 2600 50  0001 C CNN
+F 1 "GND" H 4005 2677 50  0000 C CNN
+F 2 "" H 4000 2850 50  0001 C CNN
+F 3 "" H 4000 2850 50  0001 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6048E631
+P 4200 2650
+F 0 "#PWR0104" H 4200 2400 50  0001 C CNN
+F 1 "GND" H 4205 2477 50  0000 C CNN
+F 2 "" H 4200 2650 50  0001 C CNN
+F 3 "" H 4200 2650 50  0001 C CNN
+	1    4200 2650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
